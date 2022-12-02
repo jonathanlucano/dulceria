@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModificarActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="35dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="35dp">
+
+            <TextView
+                android:id="@+id/LBLBProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="35dp">
+
+                <Button
+                    android:id="@+id/btnBProducto"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/loupe"
+                    app:backgroundTint="#FCAAD1" />
+
+                <Space
+                    android:layout_width="43dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/btnBLeer"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/barcode"
+                    android:text="Buscar"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="#FCAAD1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/txtNProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escribe Nombre"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/txtPProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escribe el Precio"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/txtDProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escribe la descripcion"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnMProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Modificar Producto"
+        android:textSize="24sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"
+        app:backgroundTint="#FCAAD1"/>
+
+</RelativeLayout>

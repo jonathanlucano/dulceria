@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroProductosActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="35dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registro de productos"
+                android:textAlignment="center"
+                android:textColor="#3EAAE4"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:srcCompat="@drawable/cesta" />
+
+            <EditText
+                android:id="@+id/txtcodigo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Escribe el codigo"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <!--  android:editable="false"-->
+
+
+            <Button
+                android:id="@+id/btnLector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Scanner"
+                app:backgroundTint="#EA4190" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/txtProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escribe el Producto"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/txtPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escribe el Precio"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/txtDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escribe la Descripcion"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnGuardarP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Registrar"
+        android:textSize="24sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"
+        app:backgroundTint="#EA4190"/>
+
+</RelativeLayout>

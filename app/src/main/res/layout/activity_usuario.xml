@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UsuarioActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="45dp">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:srcCompat="@drawable/img2" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menú"
+            android:textAlignment="center"
+            android:textColor="#D578A8"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registro productos"
+            android:textColor="#101010"
+            android:textStyle="bold"
+            app:backgroundTint="#BF95DA" />
+
+        <Button
+            android:id="@+id/btnConsultar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consultar productos"
+            android:textColor="#101010"
+            android:textStyle="bold"
+            app:backgroundTint="#BEDF98" />
+
+        <Button
+            android:id="@+id/btnModificar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modificar productos"
+            android:textColor="#101010"
+            android:textStyle="bold"
+            app:backgroundTint="#F48FCC" />
+
+        <Button
+            android:id="@+id/btnEliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eliminar productos"
+            android:textColor="#101010"
+            android:textStyle="bold"
+            app:backgroundTint="#FBDFA6" />
+
+        <Button
+            android:id="@+id/btnMostrarUsuarios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mostrar usuarios"
+            android:textColor="#101010"
+            android:textStyle="bold"
+            app:backgroundTint="#5ECFDD" />
+
+    </LinearLayout>
+
+</RelativeLayout>
